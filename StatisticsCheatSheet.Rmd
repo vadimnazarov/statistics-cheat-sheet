@@ -1,0 +1,16 @@
+---
+title: "Statistics Cheat Sheet"
+output: 
+  html_document: 
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r child = '1_Distributions.Rmd'}
+```
+
+```{r child = '2_StatisticalTests.Rmd'}
+```
