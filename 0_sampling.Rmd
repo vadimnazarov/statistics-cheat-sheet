@@ -1,6 +1,11 @@
 ---
-title: "2. Statistical tests"
-output: html_document
+title: "Sampling"
+output:
+  pdf_document:
+    toc: yes
+  html_document:
+    theme: flatly
+    toc: yes
 ---
 
 ## R Markdown
@@ -13,7 +18,11 @@ When you click the **Knit** button a document will be generated that includes bo
 summary(cars)
 ```
 
-## Including Plots
+## Simple random sample
+
+## Stratified sample
+
+## Cluster sample
 
 You can also embed plots, for example:
 

@@ -1,7 +1,9 @@
 ---
 title: "Statistics Cheat Sheet"
-output: 
-  html_document: 
+output:
+  pdf_document:
+    toc: yes
+  html_document:
     toc: yes
 ---
 
@@ -9,8 +11,8 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r child = '1_Distributions.Rmd'}
+```{r child = '1_distributions.Rmd'}
 ```
 
-```{r child = '2_StatisticalTests.Rmd'}
+```{r child = '2_statistical_tests.Rmd'}
 ```

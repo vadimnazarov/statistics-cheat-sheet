@@ -1,0 +1,47 @@
+---
+title: "Distributions"
+output:
+  pdf_document:
+    toc: yes
+  html_document:
+    theme: flatly
+    toc: yes
+---
+
+## Binomial
+
+### Formulae and characteristics
+
+$$P(\nu = r) = \begin{pmatrix} n \\ r \end{pmatrix} p^r q^{(n-r)}$$
+$$\mu(\nu) = np$$
+$$\sigma(\nu) = \sqrt{npq}$$
+
+```{r distr_binomial_formulae}
+library(ggplot2)
+set.seed(999)
+a = rbinom(10, 2, .5)
+qplot(a, stat = "identity")
+```
+
+### Inference
+
+$$\xi _{ r }=\begin{cases} 1, if E \\ 0, if !E \end{cases}$$
+
+Number of events E in a row of n repeats of the experiment.
+$$\nu = \xi_1 + \xi_2 + ... + \xi_n$$
+
+
+### Bernoulli theorem
+
+
+## Poisson
+
+
+## Normal / Gauss
+
+```{r distr_normal_formulae}
+library(ggplot2)
+set.seed(999)
+a = rnorm(1000, 0, 1)
+qplot(a, stat = c("density", "histogram"))
+```
